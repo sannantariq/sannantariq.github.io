@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway">
+    <link rel="stylesheet" href="style/styles.css" />
+    <title>Form</title>
+</head>
+
+<body>
+    <script src="scripts/script.js"></script>
+    <main>
+        <div class="wrapper">
+            <div class="sidebar">
+                <div class="nav-items">
+                    <div class="nav-sec"><a href="#about">About Me</a></div>
+                    <div class="nav-sec"><a href="#cv">Resume</a></div>
+                </div>
+                <div id="nav-bg-pattern"></div>
+            </div>
+            <div class="content">
+                <div class="about content-sec"id="about">
+                    <p id="intro">Hi, I am Sannan. <br><br> Currently working as a Data Scientist somewhere. <br><br> This site is a little barebones
+                        right now but stay posted to hear about some projects I am working on. For now, enjoy this AI
+                        generated haiku:
+
+                    </p>
+                    <p id="haiku">"Metal’s silent cry,<br> Oxidation’s embrace true,<br> Rust blooms, time slips by."</p>
+                </div>
+                <div class="content-divider"></div>
+                <div class="cv content-sec" id="cv">
+                    <div class="cv-header">
+                        <span class="cv-name">Sannan Tariq</span>
+                        <span class="cv-contact">
+                            <div><a href="mailto:sannantariqa@gmail.com">sannantariqa@gmail.com</a></div>
+                        </span>
+                    </div>
+                    <div class="cv-sec" id="cv-education">
+                        <div class="cv-sec-head">
+                            Education
+                        </div>
+                        <div class="cv-sec-item">
+                            <div class="top-line">
+                                <span class="line-date">Dec 2022</span>
+                                <span class="line-info">
+                                    <span class="line-title bold"> MSc Computer Science - Research</span>
+                                    <span class="line-loc italic">Carnegie Mellon University, USA</span>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="cv-sec-item">
+                            <div class="top-line">
+                                <span class="line-date">May 2017</span>
+                                <span class="line-info">
+                                    <span class="line-title bold"> BSc Computer Science</span>
+                                    <span class="line-loc italic">Carnegie Mellon University, Qatar</span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cv-sec" id="cv-experience">
+                        <div class="cv-sec-head">
+                            Experience
+                        </div>
+                        <div class="cv-sec-item">
+                            <div class="top-line">
+                                <span class="line-date">June 2023 - Current</span>
+                                <span class="line-info">
+                                    <span class="line-title bold">Data Scientist & Engineer</span>
+                                    <span class="line-loc italic">Panthera Investment, Germany</span>
+                                </span>
+                            </div>
+                            <div class="line-description">
+                                <ul>
+                                    <li>Built a rust based system for consuming FIX messages for analysis</li>
+                                    <li>Implemented features in python/bokeh based dashboard for financial information
+                                    </li>
+                                    <li>Improve devops workflow and constency by porting projects to monorepo and moving
+                                        to
+                                        Earthly based CI</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="cv-sec-item">
+                            <div class="top-line">
+                                <span class="line-date">Aug 2017 - Dec 2022</span>
+                                <span class="line-info">
+                                    <span class="line-title bold">Graduate Researcher</span>
+                                    <span class="line-loc italic">Carnegie Mellon University, USA</span>
+                                </span>
+                            </div>
+                            <div class="line-description">
+                                <ul>
+                                    <li>
+                                        Wrote algorithms to process in-network flow traces and determine Congestion
+                                        Control information (rtt, cwnd, congestion signal) as well as Congestion Control
+                                        algorithm phase (slow start, congestion avoidance etc).
+                                    </li>
+                                    <li>Built data processing workflow to parse, store and fetch large packet traces
+                                        (CAIDA,
+                                        WIDE) efficiently using tcpdump, numpy, pandas, CoralReef and PostgreSQL.</li>
+                                    <li>
+                                        Built system to remotely generate traffic, install traffic monitors, tc traffic
+                                        rules
+                                        and Wireguard gateways to guide traffic through specific paths and bottlenecks
+                                        on the GENI Platform for testing and evaluation.
+                                    </li>
+                                    <li>
+                                        Performed an extensive simulation-based evaluation using of the protocol using
+                                        Gurobi and SOL to investigate the advantages to various stakeholders (Content
+                                        Providers, ISPs, Users) as well the overheads involved.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="cv-sec-item">
+                            <div class="top-line">
+                                <span class="line-date">May 2022 - Dec 2022</span>
+                                <span class="line-info">
+                                    <span class="line-title bold">Software Engineering Intern/Part-Time
+                                        Researcher</span>
+                                    <span class="line-loc italic">Meta (Facebook), USA</span>
+                                </span>
+                            </div>
+                            <div class="line-description">
+                                <ul>
+                                    <li>Instrumented in-kernel Congestion Control Algorithm implementations to log state
+                                        information for debugging and analysis using eBPF.</li>
+                                    <li>Built thrift RPC service for configuring trace parameters and fetching log from
+                                        production hosts.</li>
+                                    <li>Built visualization frontend for analysis using Hack and React JS.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="cv-sec-item">
+                            <div class="top-line">
+                                <span class="line-date">May 2019 - July 2019</span>
+                                <span class="line-info">
+                                    <span class="line-title bold">Student Intern - Technical II</span>
+                                    <span class="line-loc italic">AT&T Labs - Research, USA</span>
+                                </span>
+                            </div>
+                            <div class="line-description">
+                                <ul>
+                                    <li>Designed a real-time interactive latency testing tool for cloud gaming
+                                        applications using patterns in packet traces.</li>
+                                    <li>Performed comparative study on various cloud gaming solutions and presented
+                                        results to organization leaders</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cv-sec" id="cv-skills">
+                        <div class="cv-sec-head">
+                            Skills
+                        </div>
+                        <div class="cv-sec-item">
+                            <div class="top-line">
+                                <span class="line-date"></span>
+                                <span class="line-info">
+                                    <span class="line-title bold">Technical</span>
+                                    <span class="line-loc italic"></span>
+                                </span>
+                            </div>
+                            <div class="line-description margin-top">
+                                <ul>
+                                    <li>Python (Expert), C (Expert), C++ (Intermediate), Java (Intermediate), Javascript
+                                        (Basic), Golang (Basic)</li>
+                                    <li>Wireshark (Trace Analysis), tcpdump (Packet Tracing), PostgreSQL (Database
+                                        Management), ns3 (Network Simulation), Gurobi (Optimization), Pytorch (Deep
+                                        Neural Networks)</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="cv-sec-item">
+                            <div class="top-line">
+                                <span class="line-date"></span>
+                                <span class="line-info">
+                                    <span class="line-title bold">Languages</span>
+                                    <span class="line-loc italic"></span>
+                                </span>
+                            </div>
+                            <div class="line-description margin-top">
+                                <ul>
+                                    <li>English (Native), Urdu (Native)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cv-sec" id="cv-publications">
+                        <div class="cv-sec-head">
+                            Publications
+                        </div>
+                        <div class="cv-sec-item">
+                            <div class="top-line">
+                                <span class="line-date">CIOT 2016</span>
+                                <span class="line-info">
+                                    <span class="line-title bold">Cumulus: A Distributed and Flexible Computing Testbed
+                                        for Edge Cloud Computation Offloading</span>
+                                    <span class="line-loc italic"></span>
+                                </span>
+                            </div>
+                            <div class="line-description margin-top">
+                                <ul>
+                                    <li>Hend Gedawy, <strong>Sannan Tariq</strong>, Abderrahmen Mtibaa and Khaled Harras
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="cv-sec-item">
+                            <div class="top-line">
+                                <span class="line-date">IWCMC 2017</span>
+                                <span class="line-info">
+                                    <span class="line-title bold">On practical device-to-device wireless communication:
+                                        A measurement driven study</span>
+                                    <span class="line-loc italic"></span>
+                                </span>
+                            </div>
+                            <div class="line-description">
+                                <ul>
+                                    <li>Abderrahmen Mtibaa, Ahmed Emam, <strong>Sannan Tariq</strong>, Aliaa Essameldin
+                                        and Khaled Harras</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
